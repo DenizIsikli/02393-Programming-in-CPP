@@ -3,10 +3,10 @@ using namespace std;
 
 
 class HelloName {
-public:
-    void helloname(string name) {
-        cout << "Hello " << name << "!" << endl;
-    }
+    public:
+        void helloname(string name) {
+            cout << "Hello " << name << "!" << endl;
+        }
 };
 
 

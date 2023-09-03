@@ -3,10 +3,10 @@ using namespace std;
 
 
 class ThreeDouble {
-public:
-    void threedouble(double x, double y, double z) {
-        cout << (x+y)-z << endl;
-    }
+    public:
+        void threedouble(double x, double y, double z) {
+            cout << (x+y)-z << endl;
+        }
 };
 
 

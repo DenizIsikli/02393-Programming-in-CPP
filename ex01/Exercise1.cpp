@@ -2,10 +2,10 @@
 using namespace std;
 
 class HelloWorld {
-public:
-    void helloworld() {
-        cout << "Hello World!" << endl;
-    }
+    public:
+        void helloworld() {
+            cout << "Hello World!" << endl;
+        }
 };
 
 
