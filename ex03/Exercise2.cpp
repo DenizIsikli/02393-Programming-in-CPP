@@ -16,7 +16,7 @@ class FunWithBags2 {
                 int n;
                 cin >> n;
 
-                if (n < 1 || n > 1000) {
+                if (n < 0 || n > 1000) {
                     return;
                 } else {
                     if (command == "add") {
