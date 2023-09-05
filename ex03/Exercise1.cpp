@@ -4,9 +4,9 @@ using namespace std;
 
 #define MAX 1000
 
-class FunWithBags {
+class FunWithBags1 {
     public:
-        void funwithbags() {
+        void funwithbags1() {
             vector<int> numbers(MAX, 0);
 
             while (true) {
@@ -40,7 +40,7 @@ class FunWithBags {
 
 
 int main() {
-    FunWithBags funwithbags;
-    funwithbags.funwithbags();
+    FunWithBags1 funwithbags1;
+    funwithbags1.funwithbags1();
     return 0;
 }
