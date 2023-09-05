@@ -21,9 +21,11 @@ class RememberingNumbers {
                     cout << "Invalid number" << endl;
                 } else {
                     if (numbers[n] == 0) {
-                        cout << n << " was given 0 times before" << endl;
+                        cout << numbers[n] << endl;
+                    } else if (numbers[n] == 1) {
+                        cout << numbers[n] << endl;
                     } else {
-                        cout << n << " was given " << numbers[n] << " times before" << endl;
+                        cout << numbers[n] << endl;
                     }
                     numbers[n]++;
                 }
