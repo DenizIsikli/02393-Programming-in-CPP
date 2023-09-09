@@ -2,6 +2,8 @@
 #include <vector>
 using namespace std;
 
+#define MAX 50
+
 struct Contact {
     string firstName;
     string middleName;
@@ -16,7 +18,7 @@ struct Contact {
 class AddressBook {
 public:
     void addressbook() {
-        vector<Contact> contacts(50);
+        vector<Contact> contacts(MAX, 0);
 
         while (true) {
             string command;
