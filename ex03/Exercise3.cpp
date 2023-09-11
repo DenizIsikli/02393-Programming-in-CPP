@@ -18,7 +18,7 @@ struct Contact {
 class AddressBook {
 public:
     void addressbook() {
-        vector<Contact> contacts(MAX, 0);
+        vector<Contact> contacts(MAX);
 
         while (true) {
             string command;
