@@ -1,4 +1,5 @@
 <div align="center">
   <h1>02393 Programming in C++</h1>
-  <p>This repository contains exercises and assignments for course 02393</p>
+  <p>Weekly exercises for course 02393</p>
+  <a href="https://autolab.compute.dtu.dk/courses" target="_blank">AutoLab</a>
 </div>
