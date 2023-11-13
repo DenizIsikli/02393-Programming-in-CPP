@@ -63,6 +63,7 @@ void playerInput(tile **playground, int x, int y, int n, int m) {
     }
 }
 
+
 int main() {
     int n, m;
     cin >> n >> m;

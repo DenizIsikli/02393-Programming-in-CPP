@@ -2,7 +2,6 @@
 #define __v2d__
 
 class v2d {
-
 public:
     // Standard constructor: builds a vector (a,b)
     v2d(double a, double b);
@@ -36,4 +35,3 @@ private:
 };
 
 #endif
-

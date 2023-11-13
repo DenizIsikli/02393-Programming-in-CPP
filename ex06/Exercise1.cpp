@@ -55,6 +55,7 @@ public:
     }
 };
 
+
 int main() {
     int numerator, denominator;
     string op, line;

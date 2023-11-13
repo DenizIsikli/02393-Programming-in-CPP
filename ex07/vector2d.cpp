@@ -52,4 +52,3 @@ double v2d::length() {
     // Write your code here
     return sqrt(x * x + y * y);
 }
-

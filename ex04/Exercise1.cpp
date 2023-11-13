@@ -63,6 +63,7 @@ void playerInput(tile playground[NROWS][NCOLS], int x, int y) {
     }
 }
 
+
 int main() {
     tile playground[NROWS][NCOLS];
     for (int i = 0; i < NROWS; i++) {
