@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int ReverseList() {
+void ReverseList() {
     vector<int> numbers;
     int num;
 
@@ -16,9 +16,8 @@ int ReverseList() {
             }
         }
     }
-
-    return 0;
 }
+
 
 int main() {
     ReverseList();
