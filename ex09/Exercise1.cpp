@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
 using namespace std;
 
@@ -10,12 +9,12 @@ int ReverseList() {
 
     while (cin >> num) {
         numbers.push_back(num);
-    }
 
-    reverse(numbers.begin(), numbers.end());
-
-    for (int i : numbers) {
-        cout << i;
+        if (cin.get() == '\n') {
+            for (size_t i = numbers.size(); i > 0; --i) {
+                cout << numbers[i- 1] << " ";
+            }
+        }
     }
 
     return 0;
