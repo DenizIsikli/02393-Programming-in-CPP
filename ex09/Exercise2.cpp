@@ -4,6 +4,7 @@
 using namespace std;
 
 void fibonacci() {
+    vector<int> numbers;
     int n;
 
     while (cin >> n || !cin.eof()) {
@@ -12,7 +13,7 @@ void fibonacci() {
         int nextTerm = 0;
 
         if (n == 0) {
-            cout << t2 << endl;
+            numbers.push_back(t2);
             continue;
         }
 
@@ -21,10 +22,12 @@ void fibonacci() {
             t1 = t2;
             t2 = nextTerm;
         }
-        cout << nextTerm << endl;
+        numbers.push_back(nextTerm);
 
-        if (!cin.get()) {
-            break;
+        if (cin.peek() == '\n' || cin.peek() == EOF) {
+            for (int i : numbers) {
+                cout << i << " ";
+            }
         }
     }
 }
