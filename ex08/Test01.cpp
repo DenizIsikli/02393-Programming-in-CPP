@@ -22,5 +22,4 @@ int main(){
     cout << round(w.perimeter()) << endl;
 
     return 0;
-
 }
