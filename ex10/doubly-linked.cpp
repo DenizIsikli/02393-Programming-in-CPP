@@ -56,6 +56,10 @@ void List::print(void) {
 
     while (current != nullptr) {
         cout << current->val << " ";
+
+        if (current->next == nullptr) {
+            cout << endl;
+        }
         current = current->next;
     }
 }
