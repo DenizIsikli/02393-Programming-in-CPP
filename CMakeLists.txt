@@ -4,5 +4,4 @@ project(02393_Programming_in_CPP)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(02393_Programming_in_CPP
-        ex01/Exercise2.cpp
-        ex01/Exercise5.cpp)
+        main.cpp)
