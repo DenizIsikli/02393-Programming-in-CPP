@@ -1,6 +1,6 @@
 #include <iostream>
 #include <random>
-#include "Exam-library.h"
+#include "ex01-library.h"
 
 using namespace std;
 
@@ -22,47 +22,48 @@ Tile **createSea(unsigned int m, unsigned int n) {
 
 // Task 1(b).  Implement this function
 void displaySea(Tile **sea, unsigned int m, unsigned int n, bool reveal) {
-    for (int i = 0; i < m; ++i) {
-        for (int j = 0; j < n; ++j) {
+    for (unsigned int i = 0; i < m; ++i) {
+        for (unsigned int j = 0; j < n; ++j) {
             if (reveal) {
                 if (sea[i][j].ship > 0) {
-                    cout << sea[i][j].ship;
+                    if (sea[i][j].hit) {
+                        cout << 'X';
+                    } else {
+                        cout << sea[i][j].ship;
+                    }
                 } else {
-                    cout << '.';
+                    cout << ' ';
                 }
             } else {
                 if (sea[i][j].hit) {
                     if (sea[i][j].ship > 0) {
                         cout << 'X';
                     } else {
-                        cout << '*';
+                        cout << ' ';
                     }
                 } else {
                     cout << '?';
                 }
             }
         }
-
         cout << endl;
     }
 }
+
 
 // Task 1(c).  Implement this function
 bool placeShip(Tile **sea, unsigned int m, unsigned int n, unsigned int r, unsigned int c, unsigned int number, unsigned int size, bool vertical) {
     for (int i = 0; i < m; ++i) {
         for (int j = 0; j < n; ++j) {
-            if (sea[i][j].ship == number || size < 1 || size > 4) {
+            if (sea[i][j].ship == number) {
                 return false;
             }
         }
     }
 
-    if (r >= m || c >= n) {
-        return false;
-    }
-
     if (vertical) {
         if (r + size > m) return false;
+        
 
         for (int i = 0; i < size; ++i) {
             if (sea[r + i][c].ship != 0) return false;

@@ -1,6 +1,7 @@
 #ifndef EX01_LIBRARY_H_
 #define EX01_LIBRARY_H_
 
+using namespace std;
 
 struct Tile {
     unsigned int ship;
